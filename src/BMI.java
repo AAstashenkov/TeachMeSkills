@@ -12,7 +12,7 @@ public class BMI {
         System.out.print("Input your weight: ");
         double weight = scanner.nextDouble();
 
-        System.out.println("Input your height: ");
+        System.out.print("Input your height: ");
         int height = scanner.nextInt();
 
         System.out.println("Your BMI: " + weight/(Math.pow(height, 2)));
