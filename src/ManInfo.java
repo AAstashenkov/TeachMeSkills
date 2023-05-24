@@ -5,7 +5,6 @@ public class ManInfo {
         getManInfo();
     }
     public static void getManInfo() {
-
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter man name: ");
