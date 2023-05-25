@@ -12,14 +12,14 @@ public class Bank {
         System.out.println("Your money: "+ getMoney(inputMoney, months) + "€");
     }
     public static float getMoney(float inputMoney, int months) {
-        float incomeMoney = 0;
-        float moneyWithPercent = 0;
+        float incomeMoney;
+        float moneyWithPercents = 0;
 
         for (int i = 0; i < months; i++) {
             incomeMoney = (float) (inputMoney * 0.07);
-            moneyWithPercent = inputMoney + incomeMoney;
-            inputMoney = moneyWithPercent;
+            moneyWithPercents = inputMoney + incomeMoney;
+            inputMoney = moneyWithPercents;
         }
-        return moneyWithPercent;
+        return moneyWithPercents;
     }
 }

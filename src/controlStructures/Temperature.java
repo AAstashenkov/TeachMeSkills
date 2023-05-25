@@ -14,10 +14,8 @@ public class Temperature {
             return "Warm";
         }else if (temperature > -20 && temperature <= -5){
             return "Normal";
-        }else if (temperature <= -20){
+        }else {
             return "Cold";
         }
-
-        return null;
     }
 }
