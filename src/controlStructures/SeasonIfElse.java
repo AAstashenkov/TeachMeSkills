@@ -20,6 +20,6 @@ public class SeasonIfElse {
         } else if (month == 9 || month == 10 || month == 11){
             return "Autumn";
         } else
-            return "Error";
+            return "Unknown month";
     }
 }

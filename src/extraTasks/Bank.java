@@ -7,7 +7,7 @@ public class Bank {
         System.out.print("Input tha amount of money: ");
         Scanner scanner = new Scanner(System.in);
         float inputMoney = scanner.nextFloat();
-        System.out.print("Input months: ");
+        System.out.print("Input number of months: ");
         int months = scanner.nextInt();
         System.out.println(getMoney(inputMoney, months));
     }

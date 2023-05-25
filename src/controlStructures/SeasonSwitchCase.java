@@ -21,7 +21,7 @@ public class SeasonSwitchCase {
             case 9, 10, 11:
                 return "This is autumn";
             default:
-                return "Error";
+                return "Unknown month";
         }
     }
 }
