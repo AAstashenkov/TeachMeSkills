@@ -6,11 +6,13 @@ public class Numbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        sumNumbers(number);
+        System.out.println(getSumNumbers(number));
     }
-    public static void sumNumbers(int number) {
-        for (int i = 0; i < number; i++){
-            System.out.println(i);
+    public static int getSumNumbers(int number) {
+        int sum = 0;
+        for (int i = 1; i <= number; i++) {
+            sum += i;
         }
+        return sum;
     }
 }
