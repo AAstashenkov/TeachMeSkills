@@ -3,14 +3,13 @@ import java.util.Scanner;
 public class SearchNumber {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5};
-
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input number: ");
-        int target = scanner.nextInt();
+        int number = scanner.nextInt();
 
         boolean found = false;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == target) {
+            if (array[i] == number) {
                 found = true;
                 break;
             }

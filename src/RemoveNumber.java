@@ -3,27 +3,33 @@ import java.util.Scanner;
 
 public class RemoveNumber {
     public static void main(String[] args) {
-
         int[] array = {1, 2, 3, 2, 4, 2, 5};
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input number: ");
-        int target = scanner.nextInt();
+        int number = scanner.nextInt();
 
-        boolean found = false;
+        int occurrences = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == target) {
-                found = true;
+            if (array[i] == number) {
+                occurrences++;
                 array[i] = 0;
             }
         }
 
-        if (found) {
-            System.out.println("Number was removed.");
+        if (occurrences > 0) {
+            int[] newArray = new int[array.length - occurrences];
+            int index = 0;
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] != 0) {
+                    newArray[index++] = array[i];
+                }
+            }
+            array = newArray;
+            System.out.println("Number was delete.");
         } else {
             System.out.println("Not found number.");
         }
 
-        System.out.println("Result array: " + Arrays.toString(array));
+        System.out.println("Array: " + Arrays.toString(array));
     }
-
 }
