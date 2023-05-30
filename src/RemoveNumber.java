@@ -8,16 +8,16 @@ public class RemoveNumber {
         System.out.print("Input number: ");
         int number = scanner.nextInt();
 
-        int occurrences = 0;
+        int count = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == number) {
-                occurrences++;
+                count++;
                 array[i] = 0;
             }
         }
 
-        if (occurrences > 0) {
-            int[] newArray = new int[array.length - occurrences];
+        if (count > 0) {
+            int[] newArray = new int[array.length - count];
             int index = 0;
             for (int i = 0; i < array.length; i++) {
                 if (array[i] != 0) {
