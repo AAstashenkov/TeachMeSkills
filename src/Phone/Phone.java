@@ -31,7 +31,7 @@ public class Phone {
         return number;
     }
 
-    public void sendMessage(String... numbers) {
+    public void sendMessage(String ... numbers) {
         System.out.println("Message for:");
         for (String number : numbers) {
             System.out.println(number);
