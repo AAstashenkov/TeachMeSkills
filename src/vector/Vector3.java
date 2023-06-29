@@ -6,19 +6,21 @@ public class Vector3 {
     private double y;
     private double z;
 
-    @Override
-    public String toString() {
-        return info + "\n" + "x = " + x + "\n" +"y = " + y + "\n" + "z = " + z;
-    }
-
     public double getX() {
         return x;
     }
+
     public double getY() {
         return y;
     }
+
     public double getZ() {
         return z;
+    }
+
+    @Override
+    public String toString() {
+        return info + "\n" + "x = " + x + "\n" +"y = " + y + "\n" + "z = " + z;
     }
 
     public Vector3(double x, double y, double z) {
@@ -26,15 +28,19 @@ public class Vector3 {
         this.y = y;
         this.z = z;
     }
+
     public double getVectorLength() {
         return Math.sqrt(x * x + y * y + z * z);
     }
+
     public double getScalarProduct(Vector3 vector3){
         return x * vector3.getX() + y * vector3.getY() + z * vector3.getZ();
     }
+
     public Vector3 getVectorSum(Vector3 vector3) {
         return new Vector3(x + vector3.getX(), y + vector3.getY(), z + vector3.getZ());
     }
+
     public Vector3 getVectorDefense(Vector3 vector3) {
         return new Vector3(x - vector3.getX(), y - vector3.getY(), z - vector3.getZ());
     }
